@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <base href=".">
+  <title>Image Management</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="app/app.component.css" rel="stylesheet" />
+  <link href="lib/cropperjs/dist/cropper.css" rel="stylesheet" />
+
+  <!-- Polyfill(s) for older browsers -->
+  <script src="lib/core-js/client/shim.min.js"></script>
+
+  <script src="lib/zone.js/dist/zone.js"></script>
+  <script src="lib/reflect-metadata/Reflect.js"></script>
+  <script src="lib/systemjs/dist/system.src.js"></script>
+  <script src="lib/croperjs/dist/cropper.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Configure SystemJS -->
+  <script src="systemjs.config.js"></script>
+  <script>
+      System.import('app').catch(function(err){ console.error(err);  });
+    </script>
+</head>
+
+<body>
+  <pm-app>Loading App....</pm-app>
+</body>
+
+</html>
