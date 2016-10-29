@@ -8,6 +8,12 @@ var staticRoot = __dirname + '/';
 app.set('port', (process.env.PORT || 3000));
 
 app.use(express.static(staticRoot));
+var projectRouter=express.Router();
+projectRouter.route('/test')
+.get(function(req,res){
+    res.send("API started working");
+});
+app.use('/api',projectRouter);
 
 app.use(function(req, res, next){
 
@@ -26,6 +32,7 @@ app.use(function(req, res, next){
     fs.createReadStream(staticRoot + 'index.html').pipe(res);
 
 });
+
 
 //app.all('/*', function(req, res, next) {
 //    res.sendFile('index.html', { root: __dirname + '/' });
