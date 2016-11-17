@@ -6,9 +6,27 @@
   <title>Image Management</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />-->
+     <!-- Bootstrap Core CSS -->
+    <link href="node_modules/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- MetisMenu CSS -->
+    <link href="node_modules/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="node_modules/vendor/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="node_modules/vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="node_modules/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">-->
   <link href="app/app.component.css" rel="stylesheet" />
   <link href="node_modules/cropperjs/dist/cropper.css" rel="stylesheet" />
 
@@ -23,17 +41,36 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- Configure SystemJS -->
   <script src="systemjs.config.js"></script>
+  
+
   <script>
       System.import('app').catch(function(err){ console.error(err);  });
     </script>
 </head>
 
 <body>
+  
   <pm-app>
      <div valign="center" style="text-align: center;" align="center">
     <img src="app/assets/images/loading.gif" style="height:500px; width:500px;" />
     </div>
     </pm-app>
+          <!-- jQuery -->
+    <script src="node_modules/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="node_modules/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="node_modules/vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="node_modules/vendor/raphael/raphael.min.js"></script>
+    <script src="node_modules/vendor/morrisjs/morris.min.js"></script>
+
+
+    <!-- Custom Theme JavaScript -->
+    <script src="node_modules/vendor/dist/js/sb-admin-2.js"></script>
 </body>
 
 </html>
